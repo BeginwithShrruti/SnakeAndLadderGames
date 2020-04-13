@@ -9,8 +9,36 @@ public class SnakeNLadderBoard {
   private List<Ladder> ladders;
   private List<Snake> snakes;
   private Map<Integer, Integer> playerPieces;
+  private List<Integer> players;
+  private String name;
+  private long id;
 
-  public SnakeNLadderBoard(int size)
+    public long getId()
+    {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Integer> getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(List<Integer> players) {
+        this.players = players;
+    }
+
+    public SnakeNLadderBoard(int size)
   {
       this.size = size;
   }
